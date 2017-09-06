@@ -13,6 +13,7 @@ body {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 p {
@@ -43,6 +44,17 @@ img {
   width: 90%;
   margin-left: 5%;
   margin-right: 5%;
+}
+
+footer{
+  background-color: rgba(220,220,220, 0.25);
+  margin-top: 0;
+}
+
+.clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
 }
 
 
@@ -86,6 +98,8 @@ img {
 .about, .contact {
   background-color: rgba(220,220,220, 0.25);
   padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-bottom: 0;
 }
 
@@ -95,22 +109,35 @@ img {
   margin-right: 20%;
 }
 
-.Portfolio,{
+.Portfolio {
   margin-top: 50px;
   margin-left :.8em;
   margin-right: .8em;
   margin-bottom: 30px;
 }
 
-.main-footer {
-  background-color: rgba(220,220,220, 0.25);
-  margin-top: 0;
-  position: relative;
+.Marketing {
+  margin-top: 40px;
 }
 
+.main-footer p {
+  margin: 0;
+  padding: 25px 15px;
+  font-size: 0.80em;
+  font-weight: 800;
+
+  /*margin-top: 0;
+  /*position: relative;*/
+  /*background-color: rgba(220,220,220, 0.25);*/*/
+}
+
+/*#footer-content {
+  background-color: rgba(220,220,220, 0.25);
+
+}*/
 .contact {
   margin-top: 20px;
-  padding: 20px 15px;
+  padding: 50px 15px;
   border-bottom-color: lightgrey;
   border-bottom-width: thin;
   border-bottom-style: solid;
@@ -125,17 +152,28 @@ img {
 #top {
   float: right;
   position: absolute;
-  right: 0;
+  right: 8px;
   top: 0;
-  /*font-weight: bolder;
-  font-size: 1.2em;*/
+  font-weight: bolder;
+  text-transform: uppercase;
 }
 
 #footer-name{
   float: left;
+  left: 8px;
   position: absolute;
+  font-weight: bolder;
 
   /*top: 0;
   left:0;*/
   /*margin-top: 0;
   font-weight: bold;*/
+
+  /* =================================
+    Media Queries
+  ==================================== */
+
+  @media (min-width: 768px){
+
+
+  }

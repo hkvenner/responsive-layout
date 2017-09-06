@@ -10,7 +10,7 @@
   </head>
   <body>
     <header class="main-header">
-      <h1 class="name"><a href="#">Student Name</a></h1>
+      <h1 class="name" id="student-name"><a href="#">Student Name</a></h1>
       <ul class="main-nav">
         <li><a href="#">Home</a></li>
         <li><a href="#">Portfolio</a></li>
@@ -72,8 +72,13 @@
         <p>Email<a href="mailto:email@yoursite.com">email@yoursite.com</a></p>
     </div><!--/.contact-->
     <footer class="main-footer">
-        <p id="footer-name">Student Name</p>
-        <p id="top">Back to Top</p>
+      <!-- <div class="footer-content clearfix"> -->
+        <p style="text-align: left; font-weight:bolder;"><a href ="#student-name">
+          Student Name</a><span style="float:right; text-transform: uppercase;">
+            <a href ="#student-name">Back to Top</a></span></p>
+        <!-- <p id="footer-name">Student Name</p>
+        <p id="top">Back to Top</p> -->
+      <!-- </div> -->
     </footer>
   </div> <!--/.container-->
   </body>
