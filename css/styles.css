@@ -49,6 +49,8 @@ img {
 footer{
   background-color: rgba(220,220,220, 0.25);
   margin-top: 0;
+  position: relative;
+  padding-bottom: 10px;
 }
 
 .clearfix::after {
@@ -76,19 +78,19 @@ footer{
   text-align: center;
 }
 
-.main-nav li{
+.main-nav li, .non-mobile-footer li{
   background: #fff;
   margin-top: 6px;
 	margin-bottom: 6px;
 }
 
-.main-nav {
+.main-nav, .non-mobile-footer {
   list-style-type: none;
   padding-left: 1em;
   padding-right:1em;
 
 }
-.main-nav a{
+.main-nav a, .non-mobile-footer a{
   text-transform: uppercase;
   font-weight: bold;
   padding: 10px 15px;
@@ -116,7 +118,7 @@ footer{
   margin-bottom: 30px;
 }
 
-.Marketing {
+.Marketing, .search {
   margin-top: 40px;
 }
 
@@ -131,6 +133,9 @@ footer{
   /*background-color: rgba(220,220,220, 0.25);*/*/
 }
 
+.about p {
+  margin-top: 0;
+}
 /*#footer-content {
   background-color: rgba(220,220,220, 0.25);
 
@@ -163,11 +168,11 @@ footer{
   left: 8px;
   position: absolute;
   font-weight: bolder;
+}
 
-  /*top: 0;
-  left:0;*/
-  /*margin-top: 0;
-  font-weight: bold;*/
+.non-mobile-footer {
+  display: none;
+}
 
   /* =================================
     Media Queries
@@ -175,5 +180,91 @@ footer{
 
   @media (min-width: 768px){
 
+    .wrap {
+      min-height: calc(100vh - 67.33);
+    }
 
-  }
+    .main-header, .non-mobile-footer {
+      width: 100%;
+    }
+
+    .main-nav li, .non-mobile-footer li {
+      display: inline-block;
+      background-color: rgba(220,220,220,0.01);
+      text-align: center;
+    }
+
+    .main-nav {
+      width: 100%;
+      padding-left: 30%;
+      padding-right: 30%;
+      text-align: center;
+    }
+
+    .profile-image {
+      float: right;
+      margin: 0 0 10px 15px;
+      width: 300px;
+      height: auto;
+    }
+
+    .about {
+      clear: left;
+      font-size: 1.25em;
+    }
+
+    .about p {
+      text-align: left;
+      padding-left: 10px;
+    }
+
+    .col {
+      display: inline-block;
+      width: 50%;
+      margin-right: -4px;
+      padding-right: 1em;
+      padding-left: 1em;
+      vertical-align: top;
+      margin-top: 40px;
+    }
+
+    .mobile-footer {
+      display: none;
+    }
+
+    .non-mobile-footer {
+      margin: 0 0;
+      padding-right: 0;
+      display: inline;
+      margin-left: 40%;
+
+      /*float: right;*/
+    }
+
+    .non-mobile-footer li {
+      float: right;
+    }
+
+    footer p {
+      width: 50%;
+      display: inline;
+    }
+
+    .main-footer {
+      margin-bottom: 0;
+      width: 100%;
+    }
+
+    .main-footer p{
+      float: left;
+      position: absolute;
+      bottom: -1px;
+    }
+
+
+
+    /*.about img {
+      float: right;
+    }*/
+
+}
