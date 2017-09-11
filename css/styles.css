@@ -141,12 +141,14 @@ footer{
   border-bottom-style: solid;
 
 }
+/*changed color of contact link text*/
 .contact a {
   margin-left: 20px;
-  color: rebeccapurple;
+  color: purple;
   font-weight: bold;
 }
 
+/*additional google font added*/
 .about p {
   font-family: 'Ubuntu', sans-serif;
 }
