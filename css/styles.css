@@ -73,12 +73,12 @@ footer{
 }
 
 .name,
-.main-nav li,
+.main-nav a,
 .about {
   text-align: center;
 }
 
-.main-nav li, .non-mobile-footer li{
+.main-nav a, .non-mobile-footer li{
   background: #fff;
   margin-top: 6px;
 	margin-bottom: 6px;
@@ -132,10 +132,7 @@ footer{
 .about p {
   margin-top: 0;
 }
-/*#footer-content {
-  background-color: rgba(220,220,220, 0.25);
 
-}*/
 .contact {
   margin-top: 20px;
   padding: 50px 15px;
@@ -197,7 +194,7 @@ footer{
       width: 100%;
     }
 
-    .main-nav li, .non-mobile-footer li {
+    .main-nav a, .non-mobile-footer a {
       display: inline-block;
       background-color: rgba(220,220,220,0.01);
       text-align: center;
@@ -246,11 +243,9 @@ footer{
       padding-right: 0;
       display: inline;
       margin-left: 40%;
-
-      /*float: right;*/
     }
 
-    .non-mobile-footer li {
+    .non-mobile-footer a {
       float: right;
     }
 
@@ -270,11 +265,9 @@ footer{
       bottom: -1px;
     }
 
-
-
-    /*.about img {
-      float: right;
-    }*/
+    nav a {
+      display: inline-block;
+    }
 
 }
 
@@ -302,16 +295,16 @@ footer{
   }
 
   .main-nav {
-    /*float: right;*/
     display: inline;
     position: absolute;
     text-align: right;
+    margin-top: 20px;
     padding-right: 35px;
     left:0;
     top: 0;
   }
 
-  .main-nav li {
+  .main-nav a {
     display: inline-block;
   }
 
